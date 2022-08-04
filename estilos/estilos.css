@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+/*reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background-image: url(../images/119-3264x2176.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+     
+}
+/*Estilos del conteiner*/
+.container__grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+}
+
+/*Estilos del headres y de sus hijos*/
+.encabezado{
+    display: grid;
+    grid-area: header;
+    background-color: rgba(64, 77, 59, 0.534);
+    position: sticky;
+}
+.encabezado nav{
+    margin-left: 76%;
+    margin-top: 0%;
+}
+.navbar{
+    display: flex;
+    list-style: none;     
+    margin-left: 5%;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:  rgb(13, 14, 13);
+    padding-left: 10px;
+    padding-right: 8px;
+}
+.navbar__bold{
+    font-weight: 900;
+    background-color: rgba(5, 56, 9, 0.185); 
+    border-radius:10%;
+}
+.Logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 3rem;
+}
+.lang{
+    background-color: rgba(44, 100, 26, 0.089);
+    margin-left: 95%;
+    margin-top: 0.5rem;
+}
+.hola{
+    display:flex;
+    width:20%;
+    margin-left: 5%;
+    font-size: 70%;
+}
+.bold{
+    font-weight: 900;
+    background-color: rgba(5, 56, 9, 0.185); 
+    border-radius:5px;
+}
+.box__fixed{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom:20px;
+    right:20px;
+    background-color: #4dc247a9;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px;
+}
+.iconowhatsapp{
+    width: 50px;
+}
+.contenedormain{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    
+}
+.foto{
+    display: flex;   
+    flex-direction: column;
+    padding-left: 2%;
+    
+}
+.fotopersonal{
+    display: flex;
+    flex-direction: column;
+    border-radius:20px;
+    box-shadow: 0px 0px 20px #000;
+}
+.cv{
+    text-decoration: none;
+    color: #000;
+   
+}
+.presentacionuno{
+    width:30rem;
+    text-align: center;
+    align-content: center;
+    padding: 2%; 
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacto{
+    display: flex;
+    list-style: none;
+    justify-content:center ; 
+    margin-top: 6%; 
+}
+.contacto__redes{
+    display: flex;
+    margin-left: 20px;
+    font-family:'Poppins', sans-serif;   
+}
+.derechos{
+    justify-content:center ; 
+    display: inline-flex;
+    letter-spacing: 5px;   
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        margin-left: 1%;
+        
+
+
+    }
+    .fotopersonal{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border-radius:20px;
+        box-shadow: 0px 0px 20px #000;
+    }
+    .hola{
+        display:flex;
+        font-size: 1rem;
+        width:60%;
+        margin-left: 5%;
+        font-size: 60%;
+    }
+    .lang{
+        background-color: rgba(44, 100, 26, 0.089);
+        margin-left:1rem;
+        margin-top: 0.5rem;
+    }
+}

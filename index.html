@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!--Esto no lo v el usario,aca van las configuraciones de navegacion-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://remixicon.com/">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <title>Lucas Pedemonti</title>
+</head>
+<body>
+    <div class="container__grid">
+        <header class="encabezado"><!--lo ve el usuario, indtroduccion a mi pagina-->
+            <div>
+                <img class="Logo" src="./images/logo.png" alt="Logo">
+            </div>
+            <div class="hola">
+                <h1>Hola, soy <span class="bold">Lucas Pedemonti Desarrolador Web</span></h1>
+            </div>
+            <nav><!--Etiqueta de navegacion-->
+                <ul class="navbar">
+                    <li><a class="navbar__bold" href="#">Inicio</a> <!--si quiero poner un enlace externo y que lo habra en una nueva pestaña utilizo el atributo target="_blank"dentro de la etiqueta <a href>--></li>
+                    <li><a href="./pages/sobreMi.html">Sobre mi</a></li>
+                    <li><a href="./pages/experiencia.html">Experiencia</a></li>
+                    <li><a href="./pages/clientes.html">Clientes</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <select class="lang" name="" id="">
+                    <option value="">Español</option>
+                    <option value="">Ingles</option>
+                </select>
+            </div>     
+            
+        </header> 
+        <section>
+            <div class="box__fixed">
+            <a href="https://wa.me/+5491168682017" target="_blank"><img class="iconowhatsapp" src="./assets/icon/whatsapp-line.svg" alt="Whatsapp"></a>
+            </div>
+        </section>    
+        <main class="contenedormain">
+            <section class="presentacionuno">
+                <p>Soy <span class="bold">desarrollador web</span>, estoy estudiando la carrera de <span class="bold">desarrollador full stack</span>. Me gusta el diseño, crear paginas web funcionales y adaptables a las necesidades de cada cliente Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequuntur quis quidem fugit, sint doloremque corporis in dolorum ducimus enim vero rerum, excepturi deserunt laudantium blanditiis id quas molestias voluptatibus.</p>
+            </section>
+            <section class="foto">
+                <div><!--Es en bloque ocupa todo el ancho de la pagina-->
+                    <img class="fotopersonal" src="./images/istockphoto-1296308898-170667a.jpg" alt="lucasedemonti"><!--imagen de referencia-->
+                    <a class="cv" href="">Descargar CV</a>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <div>
+                <ul class="contacto">
+                    <li><a class="contacto__redes" href="https://www.instagram.com/lucaspedemonti/?hl=en" target="_blank"><img class="icono" src="./assets/icon/instagram-line.svg" alt="instagram"></a> </li>
+                    <li><a class="contacto__redes" href="https://wa.me/+5491168682017" target="_blank"><img class="icono" src="./assets/icon/whatsapp-line.svg" alt="Whatsapp"></a></li>
+                    <li><a class="contacto__redes" href="https://github.com/"  target="_blank"><img class="icono" src="./assets/icon/github-fill.svg" alt="github"></a> </li>
+                    <li><a class="contacto__redes" href="https://www.linkedin.com/" target="_blank"><img class="icono" src="./assets/icon/linkedin-line.svg" alt="linkedin"></a> </li>
+                    <li><a class="contacto__redes" href="mailto:lucaspedemonti@gmail.com" target="_blank"><img class="icono" src="./assets/icon/mail-line.svg" alt="email"></a> </li>
+                </ul>  
+            </div>         
+            <div class="derechos">
+                <img class="icono" src="./assets/icon/copyright-fill.svg" alt="copyright">
+                <p> 2022- All rights Reserved.</p>
+            </div> 
+        </footer>
+    </div>     
+</body>
+</html>
