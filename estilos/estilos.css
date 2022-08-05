@@ -39,7 +39,12 @@ body{
 .navbar{
     display: flex;
     list-style: none;     
-    margin-left: 5%;
+    margin-left: 5%; 
+    transition: all 2s;   
+}
+.navbar li a:hover {
+    height: 10px; width: 10px;   padding: 20px;
+    background-image: linear-gradient(120deg,#22b94888,#9bacd1a1);
     
 }
 .navbar li a{
@@ -101,27 +106,75 @@ body{
     
 }
 .foto{
-    display: flex;   
-    flex-direction: column;
-    padding-left: 2%;
-    
-}
-.fotopersonal{
     display: flex;
-    flex-direction: column;
-    border-radius:20px;
-    box-shadow: 0px 0px 20px #000;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
-.cv{
+
+.foto::before {
+    position: absolute;
+    background-color: #c040f3a6;
+    /* transform: scale(0); */
+    transform: scaleY(0);
+    transition: transform .4s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; 
+    content: "Imagen";
+}
+
+.btn{
     text-decoration: none;
-    color: #000;
-   
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 10px;
+    background-image: linear-gradient(120deg,#22b94888,#9bacd1a1);
+    border-radius: 100px;
+    animation: gradient 10s linear infinite;
+    position: relative;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration:none;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: inherit;
+    border-radius: inherit;
+    z-index: -1;
+    top: 10px;
+    left: 0;
+    filter: blur(30px);
+    opacity: 0.9;
+}
+@keyframes gradient {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    
+    100% {
+        filter: hue-rotate(360deg);
+    }
+        
 }
 .presentacionuno{
     width:30rem;
+    background-image: linear-gradient(to bottom, #053809a8, #2e5222b2, #516e3bbb, #758a57c2, #99a874ab);
     text-align: center;
     align-content: center;
-    padding: 2%; 
+    padding: 1%; 
+    border-radius:20px;
+    box-shadow: 0px 0px 20px #000;
 }
 
 footer{
@@ -135,18 +188,23 @@ footer{
     display: flex;
     list-style: none;
     justify-content:center ; 
-    margin-top: 6%; 
+    margin-top: 5%; 
 }
 .contacto__redes{
     display: flex;
     margin-left: 20px;
     font-family:'Poppins', sans-serif;   
 }
+.contacto__redes:hover {
+    height: 35px; width: 35px;   padding: 20px;
+    
+}
 .derechos{
     justify-content:center ; 
     display: inline-flex;
+    margin-top: 1 %;
     letter-spacing: 5px;   
-    margin-top: 1%;
+    
 }
 
 @media screen and (max-width: 800px) {

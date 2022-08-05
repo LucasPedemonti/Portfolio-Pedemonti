@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://remixicon.com/">
     <link rel="stylesheet" href="./estilos/estilos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Lucas Pedemonti</title>
 </head>
 <body>
@@ -20,7 +24,7 @@
             <nav><!--Etiqueta de navegacion-->
                 <ul class="navbar">
                     <li><a class="navbar__bold" href="#">Inicio</a> <!--si quiero poner un enlace externo y que lo habra en una nueva pestaña utilizo el atributo target="_blank"dentro de la etiqueta <a href>--></li>
-                    <li><a href="./pages/sobreMi.html">Sobre mi</a></li>
+                    <li><a class="animate__animated animate__lightSpeedInRight" href="./pages/sobreMi.html">Sobre mi</a></li>
                     <li><a href="./pages/experiencia.html">Experiencia</a></li>
                     <li><a href="./pages/clientes.html">Clientes</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
@@ -43,10 +47,12 @@
             <section class="presentacionuno">
                 <p>Soy <span class="bold">desarrollador web</span>, estoy estudiando la carrera de <span class="bold">desarrollador full stack</span>. Me gusta el diseño, crear paginas web funcionales y adaptables a las necesidades de cada cliente Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequuntur quis quidem fugit, sint doloremque corporis in dolorum ducimus enim vero rerum, excepturi deserunt laudantium blanditiis id quas molestias voluptatibus.</p>
             </section>
-            <section class="foto">
+            <section >
                 <div><!--Es en bloque ocupa todo el ancho de la pagina-->
-                    <img class="fotopersonal" src="./images/istockphoto-1296308898-170667a.jpg" alt="lucasedemonti"><!--imagen de referencia-->
-                    <a class="cv" href="">Descargar CV</a>
+                    <section class="foto">
+                        <img class="foto__personal" src="./images/istockphoto-1296308898-170667a.jpg" alt="lucasedemonti"><!--imagen de referencia-->
+                    </section>                    
+                    <a class="btn" href="">Descargar CV </a>
                 </div>
             </section>
             
