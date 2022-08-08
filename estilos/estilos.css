@@ -20,17 +20,11 @@ body{
     grid-template-areas: "header"
                          "main"
                          "footer";
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    
 }
-
-/*Estilos del headres y de sus hijos*/
 .encabezado{
     display: grid;
     grid-area: header;
     background-color: rgba(64, 77, 59, 0.534);
-    position: sticky;
 }
 .encabezado nav{
     margin-left: 76%;
@@ -43,8 +37,7 @@ body{
     
 }
 .navbar li a{
-    text-decoration: none;
-    font-size: 1rem;
+    text-decoration: none;    
     color:  rgb(13, 14, 13);
     padding-left: 10px;
     padding-right: 8px;
@@ -129,8 +122,6 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
-
 .contacto{
     display: flex;
     list-style: none;
