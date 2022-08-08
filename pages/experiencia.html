@@ -8,43 +8,47 @@
     <title>Lucas Pedemonti</title>
 </head>
 <body>
-    <header><!--lo ve el usuario, indtroduccion a mi pagina-->
-        <img class="Logo" src="../images/logo.png" alt="Logo" >
-        <nav class="nav"><!--Etiqueta de navegacion-->
-            <ul>
-                <li><a class="nav__link" href="../index.html">Inicio</a></li>
-                <li><a class="nav__link" href="./sobreMi.html">Sobre mi</a></li>
-                <li><a class="nav__link bold" href="#">Experiencia</a></li>
-                <li><a class="nav__link" href="./clientes.html">Clientes</a></li>
-                <li><a class="nav__link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div>
-            <select class="lang" name="" id="">
-                <option value="">Español</option>
-                <option value="">Ingles</option>
-            </select>
-        </div>     
-        <div class="hola">
-            <h1>Hola, soy <span class="bold">Lucas Pedemonti<br>Desarrolador Web</span></h1>
-        </div>        
-    </header> 
-    <section>
-        <div class="box__fixed">
-            <a href="https://wa.me/+5491168682017" target="_blank"><img class="iconodirecto" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a>
-        </div>
-    </section>
-    <main>
-        <section class="presentaciondos">
-            <p>He trabajado diez años en comercio,<br>siendo encargado del manejo de <br> proveedores y clientes. Realice <br> proyectos relacionados a la <br> arquitectura naval, en la parte de <br>
-                diseño y cálculos estructurales. <br>Además, me dedique  de forma freelance <br> al diseño de planos en Autocad <br> y modelados 3D en Rinhoceros y Maxsurf,<br> para Astilleros y proyectos <br> particulares. <br>
-                Actualmente me especializo en <br> Desarrollo Web, y me encuentro <br> estudiando para Desarrollador Full Stack.                 
+    <div  class="container__grid">
+        <header class="encabezado"><!--lo ve el usuario, indtroduccion a mi pagina-->
+            <div>
+                <img class="Logo" src="../images/logo.png" alt="Logo">
+            </div>
+            <div class="hola">
+                <h1>Hola, soy <span class="bold">Lucas Pedemonti Desarrolador Web</span></h1>
+            </div>
+            <div>
+                <nav>
+                    <!--Etiqueta de navegacion-->
+                    <ul class="navbar">
+                        <li><a  href="../index.html">Inicio</a> <!--si quiero poner un enlace externo y que lo habra en una nueva pestaña utilizo el atributo target="_blank"dentro de la etiqueta <a href>--></li>
+                        <li><a href="../pages/sobreMi.html">Sobre mi</a></li>
+                        <li><a class="navbar__bold" href="#">Experiencia</a></li>
+                        <li><a href="../pages/clientes.html">Clientes</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="idioma">
+                    <select class="lang" name="" id="">
+                        <option value="">Español</option>
+                        <option value="">Ingles</option>
+                    </select>
+                </div>
+            </div>    
+        </header>  
+        <section>
+            <div class="box__fixed">
+                <a href="https://wa.me/+5491168682017" target="_blank"><img class="iconodirecto" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a>
+            </div>
         </section>
-        <Section class="info">
-            <a href="">+ Descargar CV</a>
-        </Section>
-        <section class="encuesta">    
-            <div><p>¿Que servicio te interesa?</p>
+        <main class="contenedormainexperiencia">
+            <section class="presentaciontres">
+                <p>He trabajado diez años en comercio,siendo encargado del manejo de  proveedores y clientes. Realice  proyectos relacionados a la  arquitectura naval, en la parte de diseño y cálculos estructurales. Además, me dedique  de forma freelance al diseño de planos en Autocad y modelados 3D en Rinhoceros y Maxsurf, para Astilleros y proyectos particulares. Actualmente me especializo en Desarrollo Web, y me encuentro estudiando para Desarrollador Full Stack.
+                <Section class="info">
+                    <a href="">+ Descargar CV</a>
+                </Section>               
+            </section>
+            <section class="encuesta">
+                <p>¿Que servicio te interesa?</p>
                 <div>Portfolio
                     <input type="radio" name="lado" value="portfolio">
                     <img class="trabajos" src="../images/1631547010-portfolio4.jpg" alt="">
@@ -55,31 +59,31 @@
                 </div>
                 <div>Pagina Web
                     <input type="radio" name="lado" value="pagina">
-                    <img class="trabajos" src="../images/Calares 2.png" alt="">
+                    <img class="trabajos" src="../images/Calares2.png" alt="">
                 </div>
-            </div>
-            <section>
-                <form action=""><!--etiqueta en linea-->
-                    <input type="text" placeholder="Mail" name="" id="" required><br><!--placeholder es el atributo--> <!--required obliga al usuario a completar el campo-->
-                    <input type="submit" name="" id="">
-                </form>
-             </section>     
-        </section>   
-    </main>
-    <footer>
-        <div class="contacto">
-            <ul>
-                <li><a class="contacto__redes" href="https://www.instagram.com/lucaspedemonti/?hl=en" target="_blank"><img class="icono" src="../assets/icon/instagram-line.svg" alt="instagram"></a> </li>
-                <li><a class="contacto__redes" href="https://wa.me/+5491168682017" target="_blank"><img class="icono" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a></li>
-                <li><a class="contacto__redes" href="https://github.com/"  target="_blank"><img class="icono" src="../assets/icon/github-fill.svg" alt="github"></a> </li>
-                <li><a class="contacto__redes" href="https://www.linkedin.com/" target="_blank"><img class="icono" src="../assets/icon/linkedin-line.svg" alt="linkedin"></a> </li>
-                <li><a class="contacto__redes" href="mailto:lucaspedemonti@gmail.com" target="_blank"><img class="icono" src="../assets/icon/mail-line.svg" alt="email"></a> </li>
-            </ul>  
-        </div>         
-        <div class="derechos">
-            <img class="icono" src="../assets/icon/copyright-fill.svg" alt="copyright">
-            <p> 2022- All rights Reserved.</p>
-        </div> 
-    </footer>      
+                <section>
+                    <form action=""><!--etiqueta en linea-->
+                        <input type="text" placeholder="Mail" name="" id="" required><br><!--placeholder es el atributo--> <!--required obliga al usuario a completar el campo-->
+                        <input type="submit" name="" id="">
+                    </form>
+                </section>     
+            </section>
+        </main>
+        <footer>
+            <div >
+                <ul class="contacto">
+                    <li><a class="contacto__redes" href="https://www.instagram.com/lucaspedemonti/?hl=en" target="_blank"><img class="icono" src="../assets/icon/instagram-line.svg" alt="instagram"></a> </li>
+                    <li><a class="contacto__redes" href="https://wa.me/+5491168682017" target="_blank"><img class="icono" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a></li>
+                    <li><a class="contacto__redes" href="https://github.com/"  target="_blank"><img class="icono" src="../assets/icon/github-fill.svg" alt="github"></a> </li>
+                    <li><a class="contacto__redes" href="https://www.linkedin.com/" target="_blank"><img class="icono" src="../assets/icon/linkedin-line.svg" alt="linkedin"></a> </li>
+                    <li><a class="contacto__redes" href="mailto:lucaspedemonti@gmail.com" target="_blank"><img class="icono" src="../assets/icon/mail-line.svg" alt="email"></a> </li>
+                </ul>  
+            </div>         
+            <div class="derechos">
+                <img class="icono" src="../assets/icon/copyright-fill.svg" alt="copyright">
+                <p> 2022- All rights Reserved.</p>
+            </div> 
+        </footer> 
+    </div>       
 </body>
 </html>
