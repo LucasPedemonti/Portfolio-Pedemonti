@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://remixicon.com/">
     <link rel="stylesheet" href="./estilos/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Lucas Pedemonti</title>
 </head>
 <body>
     <div class="container__grid">
-        <header class="encabezado"><!--lo ve el usuario, indtroduccion a mi pagina-->
-            <div>
-                <img class="Logo" src="./images/logo.png" alt="Logo">
-            </div>
-            <div class="hola">
-                <h1>Hola, soy <span class="bold">Lucas Pedemonti Desarrolador Web</span></h1>
-            </div>
-            <div>
-                <nav>
-                    <!--Etiqueta de navegacion-->
-                    <ul class="navbar">
-                        <li><a class="navbar__bold" href="#">Inicio</a> <!--si quiero poner un enlace externo y que lo habra en una nueva pestaña utilizo el atributo target="_blank"dentro de la etiqueta <a href>--></li>
-                        <li><a href="./pages/sobreMi.html">Sobre mi</a></li>
-                        <li><a href="./pages/experiencia.html">Experiencia</a></li>
-                        <li><a href="./pages/clientes.html">Clientes</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="idioma">
-                    <select class="lang" name="" id="">
-                        <option value="">Español</option>
-                        <option value="">Ingles</option>
-                    </select>
+        <header class="conteiner fluid sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light navegacion">
+                <div class="container-fluid">
+                  <img class="Logo" src="./images/logo-removebg-preview.png"  alt="Logo">  
+                  <a class="navbar-brand" href="#">Hola, soy <span class="bold">Lucas Pedemonti <br> Desarrolador Web</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link" href="./pages/sobreMi.html">Sobre mi</a>
+                      <a class="nav-link" href="./pages/experiencia.html">Experiencia</a>
+                      <a class="nav-link" href="./pages/clientes.html">Clientes</a>
+                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </div>
+                  <div class="idioma">
+                        <select class="lang" name="" id="">
+                             <option value="">Español</option>
+                            <option value="">Ingles</option>
+                         </select>
+                   </div>
                 </div>
-            </div>    
-        </header> 
+              </nav>
+        </header>
         <section>
             <div class="box__fixed">
                 <a href="https://wa.me/+5491168682017" target="_blank"><img class="iconowhatsapp" src="./assets/icon/whatsapp-line.svg" alt="Whatsapp"></a>
@@ -46,9 +46,10 @@
                 <p>Soy <span class="bold">desarrollador web</span>, estoy estudiando la carrera de <span class="bold">desarrollador full stack</span>. Me gusta el diseño, crear paginas web funcionales y adaptables a las necesidades de cada cliente Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequuntur quis quidem fugit, sint doloremque corporis in dolorum ducimus enim vero rerum, excepturi deserunt laudantium blanditiis id quas molestias voluptatibus.</p>
             </section>
             <section class="foto">
-                <div><!--Es en bloque ocupa todo el ancho de la pagina-->
-                    <img class="fotopersonal" src="./images/istockphoto-1296308898-170667a.jpg" alt="lucasedemonti"><!--imagen de referencia-->
-                    <a class="cv" href="">Descargar CV</a>
+                <div class="d-flex flex-column justify-content-center aling-items-center">
+                    <img class="fotopersonal" src="./images/pexels-mati-mango-5952647-removebg.png" alt="lucasedemonti">
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="button" autocomplete="off">Descargar CV</button>
+                    <a class="cv" href=""></a>
                 </div>
             </section>
             
@@ -68,6 +69,7 @@
                 <p> 2022- All rights Reserved.</p>
             </div> 
         </footer>
-    </div>     
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
 </body>
 </html>

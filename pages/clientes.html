@@ -6,70 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://remixicon.com/">
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Lucas Pedemonti</title>
 </head>
 <body>
-    <header><!--lo ve el usuario, indtroduccion a mi pagina-->
-        <img class="Logo" src="../images/logo.png" alt="Logo" >
-        <nav class="nav"><!--Etiqueta de navegacion-->
-            <ul>
-                <li><a class="nav__link" href="../index.html">Inicio</a></li>
-                <li><a class="nav__link" href="./sobreMi.html">Sobre mi</a></li>
-                <li><a class="nav__link" href="./experiencia.html">Experiencia</a></li>
-                <li><a class="nav__link bold" href="#">Clientes</a></li>
-                <li><a class="nav__link " href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div>
-            <select class="lang" name="" id="">
-                <option value="">Español</option>
-                <option value="">Ingles</option>
-            </select>
-        </div>     
-        <div class="hola">
-            <h1>Hola, soy <span class="bold">Lucas Pedemonti<br>Desarrolador Web</span></h1>
-        </div>        
-    </header>  
-    <section>
-        <h1>dsf</h1>
-        <div class="box__fixed">
-        <a href="https://wa.me/+5491168682017" target="_blank"><img class="iconodirecto" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a>
-        </div>
-    </section>
-    <main>
-         <section class="casairiarte">
-            <div ><!--Es en bloque ocupa todo el ancho de la pagina-->
-                <img class="ci" src="../images/21317634_1971035069804951_1143231269923769672_n.jpg" alt="CASA IRIARTE"><!--imagen de referencia-->
-                <h3>CASA IRIARTE - Tienda Nautica</h3>
+    <div class="container__grid">    
+        <header class="conteiner fluid sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light navegacion">
+                <div class="container-fluid">
+                <img class="Logo" src="../images/logo-removebg-preview.png"  alt="Logo">  
+                <a class="navbar-brand" href="#">Hola, soy <span class="bold">Lucas Pedemonti <br> Desarrolador Web</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex justify-content-right ">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="../pages/sobreMi.html">Sobre mi</a>
+                    <a class="nav-link" href="../pages/experiencia.html">Experiencia</a>
+                    <a class="nav-link active" aria-current="page" href="#">Clientes</a>
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </div>
+                <div class="idioma">
+                        <select class="lang" name="" id="">
+                            <option value="">Español</option>
+                            <option value="">Ingles</option>
+                        </select>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="box__fixed">
+                <a href="https://wa.me/+5491168682017" target="_blank"><img class="iconowhatsapp" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a>
             </div>
-        </section>
-        <section class="calares">
-            <div ><!--Es en bloque ocupa todo el ancho de la pagina-->
-                <img class="calar" src="../images/Calares2.png" alt="Calares"><!--imagen de referencia-->
-                <h3>Calares - Energias Renovables</h3>
-            </div>
-        </section>
-        <section class="dietetica">
-            <div><!--Es en bloque ocupa todo el ancho de la pagina-->
-                <img class="tomi" src="../images/1614878315967.jpg" alt="Dietetica Tomy"><!--imagen de referencia-->
-                <h3>Dietetica Tomy - Alimentos saludables</h3>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contactoclientes">
-            <ul>
-                <li><a class="contacto__redes" href="https://www.instagram.com/lucaspedemonti/?hl=en" target="_blank"><img class="icono" src="../assets/icon/instagram-line.svg" alt="instagram"></a> </li>
-                <li><a class="contacto__redes" href="https://wa.me/+5491168682017" target="_blank"><img class="icono" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a></li>
-                <li><a class="contacto__redes" href="https://github.com/"  target="_blank"><img class="icono" src="../assets/icon/github-fill.svg" alt="github"></a> </li>
-                <li><a class="contacto__redes" href="https://www.linkedin.com/" target="_blank"><img class="icono" src="../assets/icon/linkedin-line.svg" alt="linkedin"></a> </li>
-                <li><a class="contacto__redes" href="mailto:lucaspedemonti@gmail.com" target="_blank"><img class="icono" src="../assets/icon/mail-line.svg" alt="email"></a> </li>
-            </ul>  
-        </div>         
-        <div class="derechosclientes">
-            <img class="icono" src="../assets/icon/copyright-fill.svg" alt="copyright">
-            <p> 2022- All rights Reserved.</p>
-        </div> 
-    </footer>  
+        </section>  
+        <main class="contenedormainClientes">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../images/rsz_1rsz_1rsz_1rsz_1rsz_221317634_1971035069804951_1143231269923769672_n.jpg" class="d-block " alt="casa iriarte">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>CASA IRIARTE</h5>
+                      <p>Tienda Nautica</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../images/rsz_2118763630_1693239470845114_2671656497114544014_n.jpg" class="d-block" alt="calares">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/rsz_11614878315967.jpg" class="d-block" alt="tomy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                      <p>Dietetica - Alimentos saludables</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </main>
+        <footer>
+            <div>
+                <ul class="contacto">
+                    <li><a class="contacto__redes" href="https://www.instagram.com/lucaspedemonti/?hl=en" target="_blank"><img class="icono" src="../assets/icon/instagram-line.svg" alt="instagram"></a> </li>
+                    <li><a class="contacto__redes" href="https://wa.me/+5491168682017" target="_blank"><img class="icono" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a></li>
+                    <li><a class="contacto__redes" href="https://github.com/"  target="_blank"><img class="icono" src="../assets/icon/github-fill.svg" alt="github"></a> </li>
+                    <li><a class="contacto__redes" href="https://www.linkedin.com/" target="_blank"><img class="icono" src="../assets/icon/linkedin-line.svg" alt="linkedin"></a> </li>
+                    <li><a class="contacto__redes" href="mailto:lucaspedemonti@gmail.com" target="_blank"><img class="icono" src="../assets/icon/mail-line.svg" alt="email"></a> </li>
+                </ul>  
+            </div>         
+            <div class="derechos">
+                <img class="icono" src="../assets/icon/copyright-fill.svg" alt="copyright">
+                <p> 2022- All rights Reserved.</p>
+            </div> 
+        </footer>  
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>        
 </body>
 </html>
