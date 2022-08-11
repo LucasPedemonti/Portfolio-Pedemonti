@@ -149,8 +149,6 @@ main{
     padding-left:3%;
 }
 .encuesta{
-    display: flex;   
-    flex-direction: column;
     padding-left: 2%;
 }
 .presentacionTres{
