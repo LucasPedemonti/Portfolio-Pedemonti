@@ -1,10 +1,44 @@
-@import "scss/variables";
-@import "scss/reset";
-@import "scss/header";
-@import "scss/header";
+@import "./variables";
+@import "./reset";
+@import "./estilosgenerales";
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./iconowa";
+@import "./mediaquerie";
 
-body{
-    font-family:'Poppins', sans-serif;
-    background-image: linear-gradient(to left bottom, #845ec2, #646cc5, #4875c1, #367cb7, #3880aa, #3d8aa4, #50929c, #679896, #84a597, #a2b19d, #bebdaa, #d5cabd);    
-    min-height: 100vh;
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+             section{
+                width:25%;
+                text-align: center;
+                align-content: center;
+                padding: 2%; 
+                font-size: 1.2rem;
+             }  
+             section {
+                display: flex;   
+                flex-direction: column;
+                padding-left: 2%; 
+                justify-content: center;
+                align-items: center;
+                        img{
+                            width:300px;
+                            display: flex;
+                            flex-direction: column;
+                            border-radius:200px;
+                        }
+                        a{
+                            button{
+                                width: 100%;
+                            }
+                        }         
+             }  
+
 }

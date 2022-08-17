@@ -1,0 +1,26 @@
+header{
+    background-color:rgba(64, 77, 59, 0.473);
+        div {
+            img{
+                padding-top:0.5%;
+                padding-left: 0.5%;
+                width: 60px;
+            }
+            a{
+                margin-top: 1%;
+                margin-left: 1%;
+            }
+            div select{
+                background-color: rgba(113, 206, 82, 0.089);
+                margin-left: 1200%;
+            }
+            .navbar-nav a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90px;
+                margin-left: 0.5%;
+                /*background-color: aqua;*/
+            }
+        }    
+}

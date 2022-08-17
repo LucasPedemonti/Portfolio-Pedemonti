@@ -1,0 +1,21 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    margin-top:5%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+                    li{
+                    margin-left: 20px; 
+                }
+}
+.derechos{
+    display: flex;
+    justify-content:center ; 
+    align-items: center;
+    letter-spacing: 5px;   
+    margin-top: 2px;
+}
