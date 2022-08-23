@@ -3,9 +3,13 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .contenedorMain{
+        display: flex;
+        flex-direction: column;
+    }
     
-    .presentacionuno{
-        width:90%;
+    .presentacionUno{
+        width:80%;
         text-align: center;
         align-content: center;
         margin-left: auto;
@@ -20,8 +24,8 @@
        width:300px; 
        margin-left: 2%;
     }
-    .presentaciondos{
-        width:90%;
+    .presentacionDos{
+        width:50%;
         text-align: center;
         align-content: center;
         margin-left: auto;
