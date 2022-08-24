@@ -9,7 +9,7 @@ header{
             a{
                 margin-top: 1%;
                 margin-left: 1%;
-                font-family:'Poppins', sans-serif;
+                font-family:$font-principal;
             }
             div select{
                 background-color: rgba(113, 206, 82, 0.089);
@@ -21,7 +21,7 @@ header{
                 align-items: center;
                 width: 90px;
                 margin-left: 0.5%;
-                font-family:'Poppins', sans-serif;
+                font-family:$font-principal;
             }
         }    
 }

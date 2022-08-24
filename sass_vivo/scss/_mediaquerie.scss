@@ -49,15 +49,18 @@
         border-radius: 30px;
     }
    .formulario{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
    .left{
-    display:none;
-   }
+        display:none;
+    }
    .contact-box{    
-    width:300px;
+        width:300px;
+    }
+    .carousel{
+        width:80%;
     }
    
 }

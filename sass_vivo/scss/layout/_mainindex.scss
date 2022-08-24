@@ -1,0 +1,33 @@
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+             section{
+                width:30%;
+                text-align: center;
+                align-content: center;
+                padding: 2%; 
+                font-size: 1.2rem;
+                p{
+                    width: 500px;
+                }
+             }  
+             section {
+                @include flex-direction-center($row);                
+                        img{
+                            @extend section;
+                            border-radius:200px;
+                            width:300px;
+                        }
+                        a{
+                            button{
+                                width: 100%;
+                            }
+                        }         
+             }  
+
+}

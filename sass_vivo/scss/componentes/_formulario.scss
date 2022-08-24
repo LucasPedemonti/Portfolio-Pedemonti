@@ -6,26 +6,12 @@ main{
     div {
         .formulario{
                 position:relative;
-                margin-top: 2%;
-                width: 100%;
+                margin-top: 2%;                
                 height: 100%;
                 display:flex;   
                 justify-content: center;
                 align-items: center;
                 padding: 20px 100px;
-        }
-        .formulario::after{
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            background-image:url(../images/1627890722-cyber-pro-edited.avif);
-            background-repeat: no-repeat;
-            background-position: center;
-            filter:blur(50px);
-            z-index: -1;
-            background-color: rgba(0,0,0,0.5);
         }
         .contact-box{
             display:grid;
@@ -37,6 +23,7 @@ main{
             box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
             max-width: 850px;
             border-radius: 30px;
+            
         }
         .left{
             height: 100%;
@@ -51,6 +38,7 @@ main{
             justify-content: center;
             align-items: center;
             padding: 25px 40px;
+            
         }
         .field{
             width: 220px;
@@ -63,7 +51,7 @@ main{
             transition: all 0.3s ease-in-out;
         }
         .field:hover{
-            background-color: #b9bff577;
+            background-color: #b9bff59f;
 
         }
         .btn2{
@@ -89,7 +77,7 @@ main{
     section{
     margin-top: 20px;
         h2{
-            font-family:'Poppins', sans-serif;
+            font-family:$font-principal;
             font-size: 2rem;
             width:1000px
         }

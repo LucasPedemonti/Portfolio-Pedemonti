@@ -11,18 +11,13 @@ main{
     section {
         p{
             width:500px;
-            font-family:'Poppins', sans-serif;
+            font-family:$font-principal;
         }    
     }
     section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-direction-center($column);
         ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: stretch;
-            align-items: initial;
+            @include flex-direction-center($column);
             li{
                 display: flex;
                 margin-top: 30px;  

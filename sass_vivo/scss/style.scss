@@ -1,69 +1,17 @@
 @import "./variables";
 @import "./reset";
+@import "./mixins";
 @import "./estilosgenerales";
 @import "./layout/header";
-@import "./layout/main";
+@import "./layout/mainindex";
 @import "./layout/footer";
-@import "./componentes/iconowa";
-@import "./mediaquerie";
 @import "./layout/sobremi";
+@import "./componentes/encuesta";
+@import "./componentes/iconowa";
 @import "./componentes/formulario";
+@import "./componentes/carousel";
+@import "./mediaquerie";
 
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4%;
-             section{
-                width:30%;
-                text-align: center;
-                align-content: center;
-                padding: 2%; 
-                font-size: 1.2rem;
-                p{
-                    width: 500px;
-                }
-             }  
-             section {
-                display: flex;   
-                flex-direction: column;
-                padding-left: 2%; 
-                justify-content: center;
-                align-items: center;
-                        img{
-                            width:300px;
-                            display: flex;
-                            flex-direction: column;
-                            border-radius:200px;
-                        }
-                        a{
-                            button{
-                                width: 100%;
-                            }
-                        }         
-             }  
 
-}
 
-section{
-    .trabajos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-                img{
-                    margin-left:20px ;
-                }
-    }
 
-}
-main{
-    .clientes{
-        
-            font-size:100px;
-        
-    }
-}
