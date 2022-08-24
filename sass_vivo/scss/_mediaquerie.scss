@@ -1,4 +1,4 @@
-@media only screen and (min-width: 0px) and (max-width: 1000px){
+@media only screen and (min-width: 0px) and (max-width: 1024px){
     .encabezado{
         display: flex;
         flex-wrap: wrap;
@@ -9,7 +9,7 @@
     }
     
     .presentacionUno{
-        width:80%;
+        width:70%;
         text-align: center;
         align-content: center;
         margin-left: auto;
@@ -48,7 +48,16 @@
         display: flex;
         border-radius: 30px;
     }
-        
-   
+   .formulario{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+   .left{
+    display:none;
+   }
+   .contact-box{    
+    width:300px;
+    }
    
 }

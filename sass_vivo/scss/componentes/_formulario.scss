@@ -1,0 +1,104 @@
+main{
+    h1{
+        font-family:'Poppins', sans-serif;
+        font-size: 2rem;
+    }
+    div {
+        .formulario{
+                position:relative;
+                margin-top: 2%;
+                width: 100%;
+                height: 100%;
+                display:flex;   
+                justify-content: center;
+                align-items: center;
+                padding: 20px 100px;
+        }
+        .formulario::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background-image:url(../images/1627890722-cyber-pro-edited.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            filter:blur(50px);
+            z-index: -1;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .contact-box{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
+            max-width: 850px;
+            border-radius: 30px;
+        }
+        .left{
+            height: 100%;
+            background: url(../logolp.png) no-repeat center;
+            background-size: cover;
+            border-top-left-radius: 30px;  
+            border-bottom-left-radius: 30px;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 40px;
+        }
+        .field{
+            width: 220px;
+            border: 2px solid rgba(0, 0, 0, 0.184);
+            outline:none;
+            background-color:rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            margin-bottom: 22px;
+            transition: all 0.3s ease-in-out;
+        }
+        .field:hover{
+            background-color: #b9bff577;
+
+        }
+        .btn2{
+            width: 40%;
+            padding: 0.3rem 0.3rem;
+            background-color:rgba(0, 0, 0, 0);
+            font-size:80%;
+            outline:none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            border-radius: 10px;
+        
+        }
+        .btn2:hover{
+            background-color: #b9bff577;
+        }
+        .field:focus{
+            border: 2px solid #b9bff577;
+            background-color: rgba(7, 7, 7, 0.199);
+        }
+    }     
+    section{
+    margin-top: 20px;
+        h2{
+            font-family:'Poppins', sans-serif;
+            font-size: 2rem;
+            width:1000px
+        }
+        .mapa{
+            border-radius: 20px;
+            margin-top: 20px;
+        } 
+    }
+}
+   
+
+

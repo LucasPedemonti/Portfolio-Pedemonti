@@ -30,7 +30,8 @@ header {
     width: 60px; }
   header div a {
     margin-top: 1%;
-    margin-left: 1%; }
+    margin-left: 1%;
+    font-family: 'Poppins', sans-serif; }
   header div div select {
     background-color: rgba(113, 206, 82, 0.089);
     margin-left: 1200%; }
@@ -40,7 +41,7 @@ header {
     align-items: center;
     width: 90px;
     margin-left: 0.5%;
-    /*background-color: aqua;*/ }
+    font-family: 'Poppins', sans-serif; }
 
 main {
   grid-area: main;
@@ -64,7 +65,8 @@ ul {
   justify-content: center;
   align-items: center;
   letter-spacing: 5px;
-  margin-top: 2px; }
+  margin-top: 2px;
+  font-family: 'Poppins', sans-serif; }
 
 .box__fixed {
   display: flex;
@@ -81,7 +83,7 @@ ul {
   .box__fixed img {
     width: 40px; }
 
-@media only screen and (min-width: 0px) and (max-width: 1000px) {
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
   .encabezado {
     display: flex;
     flex-wrap: wrap; }
@@ -89,7 +91,7 @@ ul {
     display: flex;
     flex-direction: column; }
   .presentacionUno {
-    width: 80%;
+    width: 70%;
     text-align: center;
     align-content: center;
     margin-left: auto;
@@ -120,7 +122,15 @@ ul {
     margin-bottom: 15%; }
   .contact-box {
     display: flex;
-    border-radius: 30px; } }
+    border-radius: 30px; }
+  .formulario {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .left {
+    display: none; }
+  .contact-box {
+    width: 300px; } }
 
 main div {
   display: flex;
@@ -131,7 +141,8 @@ main div {
     flex-direction: column; }
 
 main section p {
-  width: 500px; }
+  width: 500px;
+  font-family: 'Poppins', sans-serif; }
 
 main section {
   display: flex;
@@ -148,6 +159,99 @@ main section {
       main section ul li img {
         width: 40px;
         margin-left: 20px; }
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem; }
+
+main div .formulario {
+  position: relative;
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px; }
+
+main div .formulario::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-image: url(../images/1627890722-cyber-pro-edited.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(50px);
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+main div .contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  max-width: 850px;
+  border-radius: 30px; }
+
+main div .left {
+  height: 100%;
+  background: url(../logolp.png) no-repeat center;
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px; }
+
+main div .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 40px; }
+
+main div .field {
+  width: 220px;
+  border: 2px solid rgba(0, 0, 0, 0.184);
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 22px;
+  transition: all 0.3s ease-in-out; }
+
+main div .field:hover {
+  background-color: #b9bff577; }
+
+main div .btn2 {
+  width: 40%;
+  padding: 0.3rem 0.3rem;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 80%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 10px; }
+
+main div .btn2:hover {
+  background-color: #b9bff577; }
+
+main div .field:focus {
+  border: 2px solid #b9bff577;
+  background-color: rgba(7, 7, 7, 0.199); }
+
+main section {
+  margin-top: 20px; }
+  main section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    width: 1000px; }
+  main section .mapa {
+    border-radius: 20px;
+    margin-top: 20px; }
 
 main {
   grid-area: main;
@@ -187,90 +291,5 @@ section .trabajos {
   section .trabajos img {
     margin-left: 20px; }
 
-.contenedormainClientes {
-  grid-area: main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4%; }
-
-.formulario {
-  position: relative;
-  margin-top: 2%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 100px; }
-
-.formulario::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  background-image: url(../images/1627890722-cyber-pro-edited.avif);
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(50px);
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.contact-box {
-  max-width: 850px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19); }
-
-.left {
-  background: url(.../images/logolp.png) no-repeat center;
-  background-size: cover;
-  height: 100%; }
-
-.right {
-  padding: 25px 40px; }
-
-.field {
-  width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0.184);
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin-bottom: 22px;
-  transition: all 0.3s ease-in-out; }
-
-.field:hover {
-  background-color: #b9bff577; }
-
-.btn2 {
-  width: 40%;
-  padding: 0.3rem 0.3rem;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 80%;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: none;
-  border-radius: 10px; }
-
-.btn2:hover {
-  background-color: #b9bff577; }
-
-.field:focus {
-  border: 2px solid #b9bff577;
-  background-color: rgba(7, 7, 7, 0.199); }
-
-.mainContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.mapa {
-  border-radius: 20px; }
+main .clientes {
+  font-size: 100px; }
