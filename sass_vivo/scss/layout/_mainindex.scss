@@ -1,19 +1,17 @@
-main{
+.principal{
     grid-area: main;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: r;
     justify-content: center;
     align-items: center;
     margin-top: 4%;
              section{
                 width:30%;
                 text-align: center;
-                align-content: center;
-                padding: 2%; 
+                align-content: center;                
                 font-size: 1.2rem;
                 p{
-                    width: 500px;
+                    width: 70%;
                 }
              }  
              section {

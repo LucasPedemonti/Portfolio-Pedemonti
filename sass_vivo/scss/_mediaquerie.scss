@@ -3,64 +3,102 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .contenedorMain{
+    .principal{
         display: flex;
         flex-direction: column;
+        section{
+            width: 90%;
+        }
+        
     }
-    
-    .presentacionUno{
-        width:70%;
-        text-align: center;
-        align-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
+    .secundario{
+            .sobremiContenido{
+                    flex-direction:column;
+                    .presentacionDos {
+                        width:80%;
+                        font-size: 1rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .habilidad{
+                        @include flex-direction-center($column);
+                        ul{
+                                @include flex-direction-center($column);
+                                .progress{
+                                    width: 100%;
+                                }
+                                li{
+                                    display: flex;
+                                    margin-top: 30px;  
+                                        
+                                    img{
+                                        width: 40px;
+                                        margin-left: 20px;
+                                    }
+                                }
+                            }      
+                    } 
+            }
+    }   
+    .experiencia{
+        flex-direction: column;
+        .terciario{
+            margin-left: auto;
+            margin-right:auto ;
+            h1{
+                font-size: 1.6rem;
+            }             
+            .presentacionTres{
+                width:80%;
+                font-size: 1rem;
+            }
+        }
+        .encuesta{
+            width: 50%;
+            h2{
+                font-size: 1.2rem;
+            }
+            .trabajos{
+                margin-top: 10px;
+                img{
+                    margin-top: 10px;
+                    width: 200px;
+                }
+            }
+        }    
     }
-    .foto {
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .fotopersonal{
-       width:300px; 
-       margin-left: 2%;
-    }
-    .presentacionDos{
-        width:50%;
-        text-align: center;
-        align-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
-    }
-    .presentacionTres{
-        width:90%;
-        text-align: center;
-        align-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;     
-    }    
-    .contenedormainClientes{
-        margin-top: 20%;
-        margin-bottom: 15%;
-    }
-    .contact-box{
+    .clientes {
+        grid-area: main;
         display: flex;
-        border-radius: 30px;
-    }
-   .formulario{
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 10%;
+        margin-bottom: 37%;
+        h1{
+            font-size: 1.6rem;
+            margin-bottom: 100px;
+        }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
     }
-   .left{
-        display:none;
+    .contactame{
+        .formulario{
+            width: 70%;  
+                  
+            .contact-box{
+                padding-left: 10%;
+                padding-right: 10%; 
+                justify-content: center;
+                align-items: center;
+                border-radius:100px;  
+            }
+        }
+        .left{
+            display: none;
+        }
     }
-   .contact-box{    
-        width:300px;
-    }
-    .carousel{
-        width:80%;
-    }
-   
 }

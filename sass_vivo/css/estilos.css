@@ -33,7 +33,7 @@ header {
     font-family: "Poppins", sans-serif; }
   header div div select {
     background-color: rgba(113, 206, 82, 0.089);
-    margin-left: 1200%; }
+    float: right; }
   header div .navbar-nav a {
     display: flex;
     justify-content: center;
@@ -41,33 +41,6 @@ header {
     width: 90px;
     margin-left: 0.5%;
     font-family: "Poppins", sans-serif; }
-
-main {
-  grid-area: main;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4%; }
-  main section, main section img {
-    width: 30%;
-    text-align: center;
-    align-content: center;
-    padding: 2%;
-    font-size: 1.2rem; }
-    main section p {
-      width: 500px; }
-  main section, main section img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    main section img {
-      border-radius: 200px;
-      width: 300px; }
-    main section a button {
-      width: 100%; }
 
 footer {
   grid-area: footer;
@@ -90,42 +63,116 @@ ul {
   margin-top: 2px;
   font-family: "Poppins", sans-serif; }
 
-main div {
+.principal {
+  grid-area: main;
   display: flex;
+  flex-direction: r;
   justify-content: center;
   align-items: center;
-  width: 100%; }
-  main div h1 {
-    flex-direction: column; }
+  margin-top: 4%; }
+  .principal section, .principal section img {
+    width: 30%;
+    text-align: center;
+    align-content: center;
+    font-size: 1.2rem; }
+    .principal section p {
+      width: 70%; }
+  .principal section, .principal section img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .principal section img {
+      border-radius: 200px;
+      width: 300px; }
+    .principal section a button {
+      width: 100%; }
 
-main section p {
-  width: 500px;
-  font-family: "Poppins", sans-serif; }
-
-main section, main section img {
+.secundario {
+  grid-area: main;
   display: flex;
   flex-direction: column;
+  margin-top: 5%; }
+  .secundario .sobremiContenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .secundario .sobremiContenido .presentacionDos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem;
+      margin-right: 10%; }
+    .secundario .sobremiContenido .habilidad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .secundario .sobremiContenido .habilidad ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .secundario .sobremiContenido .habilidad ul .progress {
+          width: 100%; }
+        .secundario .sobremiContenido .habilidad ul li {
+          display: flex;
+          margin-top: 30px; }
+          .secundario .sobremiContenido .habilidad ul li img {
+            width: 40px;
+            margin-left: 20px; }
+
+.experiencia {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
-  main section ul {
+  align-items: center;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto; }
+  .experiencia .terciario {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    main section ul li {
+    align-items: center;
+    margin-right: 15%; }
+    .experiencia .terciario .presentacionTres {
       display: flex;
-      margin-top: 30px; }
-      main section ul li img {
-        width: 40px;
-        margin-left: 20px; }
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10%;
+      width: 500px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem; }
+  .experiencia .encuesta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px; }
+    .experiencia .encuesta h2 {
+      font-size: 1.4rem; }
+    .experiencia .encuesta img {
+      border-radius: 100px;
+      margin-top: 25px; }
 
-section .trabajos {
+.clientes {
+  grid-area: main;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; }
-  section .trabajos img {
-    margin-left: 20px; }
+  margin-top: 5%; }
+  .clientes h1 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px; }
 
 .box__fixed {
   display: flex;
@@ -142,139 +189,155 @@ section .trabajos {
   .box__fixed img {
     width: 40px; }
 
-main h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem; }
-
-main div .formulario {
-  position: relative;
-  margin-top: 2%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 100px; }
-
-main div .contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-  max-width: 850px;
-  border-radius: 30px; }
-
-main div .left {
-  height: 100%;
-  background: url(../logolp.png) no-repeat center;
-  background-size: cover;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px; }
-
-main div .right {
+.contactame {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 40px; }
-
-main div .field {
-  width: 220px;
-  border: 2px solid rgba(0, 0, 0, 0.184);
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin-bottom: 22px;
-  transition: all 0.3s ease-in-out; }
-
-main div .field:hover {
-  background-color: #b9bff59f; }
-
-main div .btn2 {
-  width: 40%;
-  padding: 0.3rem 0.3rem;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 80%;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: none;
-  border-radius: 10px; }
-
-main div .btn2:hover {
-  background-color: #b9bff577; }
-
-main div .field:focus {
-  border: 2px solid #b9bff577;
-  background-color: rgba(7, 7, 7, 0.199); }
-
-main section, main section img {
-  margin-top: 20px; }
-  main section h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 2rem;
-    width: 1000px; }
-  main section .mapa {
-    border-radius: 20px;
-    margin-top: 20px; }
-
-.carousel {
-  grid-area: main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 5%; }
+  .contactame h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; }
+  .contactame div .formulario {
+    position: relative;
+    margin-top: 2%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px; }
+  .contactame div .contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    max-width: 850px;
+    border-radius: 30px; }
+  .contactame div .left {
+    height: 100%;
+    background: url(../logolp.png) no-repeat center;
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; }
+  .contactame div .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px; }
+  .contactame div .field {
+    width: 220px;
+    border: 2px solid rgba(0, 0, 0, 0.184);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 22px;
+    transition: all 0.3s ease-in-out; }
+  .contactame div .field:hover {
+    background-color: #b9bff59f; }
+  .contactame div .btn2 {
+    width: 40%;
+    padding: 0.3rem 0.3rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 80%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px; }
+  .contactame div .btn2:hover {
+    background-color: #b9bff577; }
+  .contactame div .field:focus {
+    border: 2px solid #b9bff577;
+    background-color: rgba(7, 7, 7, 0.199); }
+  .contactame section, .contactame .principal section img, .principal section .contactame img {
+    margin-top: 5%;
+    text-align: center; }
+    .contactame section h2, .principal section .contactame img h2 {
+      font-size: 1.4rem; }
+    .contactame section .mapa, .principal section .contactame img .mapa {
+      border-radius: 20px;
+      margin-top: 20px; }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
   .encabezado {
     display: flex;
     flex-wrap: wrap; }
-  .contenedorMain {
+  .principal {
     display: flex;
     flex-direction: column; }
-  .presentacionUno {
-    width: 70%;
-    text-align: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%; }
-  .foto {
-    justify-content: center;
-    margin-top: 10%; }
-  .fotopersonal {
-    width: 300px;
-    margin-left: 2%; }
-  .presentacionDos {
-    width: 50%;
-    text-align: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%; }
-  .presentacionTres {
-    width: 90%;
-    text-align: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%; }
-  .contenedormainClientes {
-    margin-top: 20%;
-    margin-bottom: 15%; }
-  .contact-box {
+    .principal section, .principal section img {
+      width: 90%; }
+  .secundario .sobremiContenido {
+    flex-direction: column; }
+    .secundario .sobremiContenido .presentacionDos {
+      width: 80%;
+      font-size: 1rem;
+      margin-left: auto;
+      margin-right: auto; }
+    .secundario .sobremiContenido .habilidad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .secundario .sobremiContenido .habilidad ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .secundario .sobremiContenido .habilidad ul .progress {
+          width: 100%; }
+        .secundario .sobremiContenido .habilidad ul li {
+          display: flex;
+          margin-top: 30px; }
+          .secundario .sobremiContenido .habilidad ul li img {
+            width: 40px;
+            margin-left: 20px; }
+  .experiencia {
+    flex-direction: column; }
+    .experiencia .terciario {
+      margin-left: auto;
+      margin-right: auto; }
+      .experiencia .terciario h1 {
+        font-size: 1.6rem; }
+      .experiencia .terciario .presentacionTres {
+        width: 80%;
+        font-size: 1rem; }
+    .experiencia .encuesta {
+      width: 50%; }
+      .experiencia .encuesta h2 {
+        font-size: 1.2rem; }
+      .experiencia .encuesta .trabajos {
+        margin-top: 10px; }
+        .experiencia .encuesta .trabajos img {
+          margin-top: 10px;
+          width: 200px; }
+  .clientes {
+    grid-area: main;
     display: flex;
-    border-radius: 30px; }
-  .formulario {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-  .left {
-    display: none; }
-  .contact-box {
-    width: 300px; }
-  .carousel {
-    width: 80%; } }
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 37%; }
+    .clientes h1 {
+      font-size: 1.6rem;
+      margin-bottom: 100px; }
+    .clientes img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%; }
+  .contactame .formulario {
+    width: 70%; }
+    .contactame .formulario .contact-box {
+      padding-left: 10%;
+      padding-right: 10%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px; }
+  .contactame .left {
+    display: none; } }
