@@ -1,0 +1,71 @@
+header{
+    background-color:rgba(64, 77, 59, 0.473);
+        div {
+            img{
+                padding-top:0.5%;
+                padding-left: 0.5%;
+                width: 60px;
+            }
+            a{
+                margin-top: 1%;
+                margin-left: 1%;
+                font-family:$font-principal;
+            }
+
+            div select{
+                background-color: rgba(113, 206, 82, 0.089);
+                float: right;
+            }
+            .nav-link {
+                display: inline-block;
+                
+                text-decoration: none;
+                width: 100%;
+                cursor: pointer;
+                position: relative;
+                &::after{
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: rgba(216, 215, 228, 0.534);
+                border-radius: 4px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.2s ease;
+                }
+                &:hover::after{
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+            .navbar-nav a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90px;
+                margin-left: 0.5%;
+                font-family:$font-principal;
+            }
+        }    
+        .nav-link {
+            
+            cursor: pointer;
+            position: relative;
+            &::after{
+            content: "";
+            width: 100%;
+            height: 10px;
+            background-color: rgb(216, 12, 12);
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.25s ease;
+            }
+        }

@@ -1,0 +1,186 @@
+.secundario{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+        .sobremiContenido{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                .presentacionDos {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width:500px;
+                    font-family:$font-principal;  
+                    font-size: 1.2rem;
+                    margin-right: 10%  ;
+                    h1{
+                        @include title;
+                        margin-bottom: 10%
+                    
+                    }
+                }
+                .habilidad{
+                    @include flex-direction-center($column);
+                    ul{
+                            @include flex-direction-center($column);
+                            .progress{
+                                width: 100%;
+                            }
+                            li{
+                                display: flex;
+                                margin-top: 30px;  
+                                    
+                                img{
+                                    width: 40px;
+                                    margin-left: 20px;
+                                }
+                            }
+                        }      
+                } 
+        }
+        .arquitectura{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6% ;
+            h4{
+                @include title;              
+                height: max-content;    
+                margin-bottom: 5%;            
+            }
+            .planos{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 30px;
+                .detalle{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .velero{
+                        display: inline-block;
+                        position: relative;
+                        cursor: pointer;
+                        overflow: hidden;
+                        &::before{
+                            content:"Constructivo Velero";
+                            bottom:0;
+                            top:0;
+                            left:0;
+                            right:0;
+                            background-color:#858186ce;
+                            transform: translate(100%);
+                            transform: scale(0);
+                            position:absolute;
+                            transform: scaleX(0);
+                            transition: transform .4s;
+                            color:rgb(7, 0, 0);
+                            display:flex;
+                            justify-content: center;
+                            align-items:center ;
+                            font-size:1.5rem ;
+                        }
+                        &:hover::before{
+                            transform: scaleY(1);
+                        }
+                }
+                .timon{
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+                    &::before{
+                        content:"Plano Timon";
+                        position:absolute;
+                        top:0;
+                        bottom:0;
+                        left:0;
+                        right:0;
+                        background-color:#858186ce;
+                        transform: translate(100%);
+                        transform: scale(0);
+                        transform: scaleX(0);
+                        transition: transform .4s;
+                        color:rgb(7, 0, 0);
+                        display:flex;
+                        justify-content: center;
+                        align-items:center ;
+                        font-size:1.5rem ;
+                        }
+                    &:hover::before{
+                        transform: scaleY(1);
+                        }
+                }
+                }
+                .refuerzos{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 30px;
+                    .quillote{
+                            display: inline-block;
+                            position: relative;
+                            cursor: pointer;
+                            overflow: hidden;
+                            &::before{
+                                content:"Plano Quillote";
+                                position:absolute;
+                                top:0;
+                                bottom:0;
+                                left:0;
+                                right:0;
+                                background-color:#858186ce;
+                                transform: translate(100%);
+                                transform: scale(0);
+                                transform: scaleX(0);
+                                transition: transform .4s;
+                                color:rgb(7, 0, 0);
+                                display:flex;
+                                justify-content: center;
+                                align-items:center ;
+                                font-size:1.5rem ;
+                            }
+                            &:hover::before{
+                                transform: scaleY(1);
+                            }
+                    }
+                    .varengas{
+                        display: inline-block;
+                        position: relative;
+                        cursor: pointer;
+                        overflow: hidden;
+                        &::before{
+                            content:"Plano Vargengas";
+                            position:absolute;
+                            top:0;
+                            bottom:0;
+                            left:0;
+                            right:0;
+                            background-color:#858186ce;
+                            transform: translate(100%);
+                            transform: scale(0);
+                            transform: scaleX(0);
+                            transition: transform .4s;
+                            color:rgb(7, 0, 0);
+                            display:flex;
+                            justify-content: center;
+                            align-items:center ;
+                            font-size:1.5rem ;
+                        }
+                        &:hover::before{
+                            transform: scaleY(1);
+                        }
+                    } 
+                }     
+            }
+            section{
+                margin-top: 40px;
+            }
+        }         
+}      

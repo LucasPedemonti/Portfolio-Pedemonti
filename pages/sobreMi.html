@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="https://remixicon.com/">
-    <link rel="stylesheet" href="../sass_vivo/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Lucas Pedemonti - Sobre mi</title>
@@ -24,11 +25,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
-                        <a class="nav-link" href="../pages/experiencia.html">Experiencia</a>
-                        <a class="nav-link" href="../pages/clientes.html">Clientes</a>
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                            <a class="nav-link" href="../pages/experiencia.html">Experiencia</a>
+                            <a class="nav-link" href="../pages/clientes.html">Clientes</a>
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </div>
                     </div>
                     <div class="idioma">
                             <select class="lang" name="" id="">
@@ -46,10 +48,9 @@
         </section>
         <main class="secundario">
             <div class="sobremiContenido">
-                <section class="presentacionDos animate__animated animate__fadeInLeftBig">
-                    <h1>Sobre mi</h1>         
-                    <p>Hola mi nombre es Lucas Pedemonti, naci en el año 1991 en Argentina - Provincia de Buenos Aires, en la localidad de San Isidro. Me encuentro trabajando en mi tesis para finalizar la carrera de Arquitectura Naval en la Universidad Nacional de Quilmes. Empece esta carrera en el año 2012, debibo a mi pasion por la nautica y el rio. Me destaco en el manejo de programas como Autocad, Rinhosceros, Maxsurf y SolidEdge.<br> A principios del año 2022 arranque a hacer cursos gratuitos de desarrollo web por internet en la plataforma Youtube. Luego empece a estudiar la carrera de Desarrollador Full Stack en Coder House. Estas dos carreras son muy diferentes, pero estan relacionadas mediante el diseño, realizacion de proyectos y brindar un buen servicio a nuestros clientes. Siempre me propongo nuevos desafios y vivir nuevas experiencias.</p>
-                    <a href="http://www.unq.edu.ar/carreras/17-arquitectura-naval.php" target="_blank">+ info sobre Arquitectura</a>
+                <section class="presentacionDos ">
+                    <h1 class="animate__animated animate__fadeInDownBig">Sobre mi</h1>         
+                    <p class="animate__animated animate__fadeInLeftBig">Hola mi nombre es Lucas Pedemonti, nací en el año 1991 en Argentina - Provincia de Buenos Aires, en la localidad de San Isidro. Me encuentro trabajando en mi tesis para finalizar la carrera de Arquitectura Naval en la Universidad Nacional de Quilmes. Empecé esta carrera en el año 2012, debibo a mi pasión por la náutica y el río. Me destaco en el manejo de programas como Autocad, Rinhosceros, Maxsurf y SolidEdge.<br> A principios del año 2022 arranque a hacer cursos gratuitos de desarrollo web por internet en la plataforma Youtube. Luego empecé a estudiar la carrera de Desarrollador Full Stack en Coder House. Estas dos carreras son muy diferentes, pero estan relacionadas mediante el diseño, realización de proyectos y brindar un buen servicio a nuestros clientes. Siempre me propongo nuevos desafios y vivir nuevas experiencias.</p>
                 </section>               
                 <section class="habilidad animate__animated animate__fadeInRightBig">
                     <h3>Mis habilidades</h3>
@@ -76,13 +77,39 @@
                         </div>
                 </section>
             </div>
+            <div class="arquitectura">
+                <div>
+                    <h4>Planos de Arquitectura</h4>
+                </div>
+                <div class="planos">
+                    <div class="detalle">
+                        <div class="velero">
+                            <img src="../images/velero 1.png"  alt="velero">
+                        </div>
+                        <div class="timon">
+                            <img src="../images/Timon.png" alt="timon">
+                        </div>
+                    </div>
+                    <div class="refuerzos">
+                        <div class="quillote">
+                            <img src="../images/quillote.png" alt="quillote">
+                        </div>
+                        <div class="varengas">
+                            <img  src="../images/varengas.png" alt="varengas">
+                        </div> 
+                    </div>                    
+                </div>
+                <section>
+                    <a href="http://www.unq.edu.ar/carreras/17-arquitectura-naval.php" target="_blank">+ info sobre Arquitectura</a>
+                </section>
+            </div>
         </main>
         <footer>
             <div>
                 <ul class="contacto">
                     <li><a class="contacto__redes" href="https://www.instagram.com/lucaspedemonti/?hl=en" target="_blank"><img class="icono" src="../assets/icon/instagram-line.svg" alt="instagram"></a> </li>
                     <li><a class="contacto__redes" href="https://wa.me/+5491168682017" target="_blank"><img class="icono" src="../assets/icon/whatsapp-line.svg" alt="Whatsapp"></a></li>
-                    <li><a class="contacto__redes" href="https://github.com/"  target="_blank"><img class="icono" src="../assets/icon/github-fill.svg" alt="github"></a> </li>
+                    <li><a class="contacto__redes" href="https://github.com/LucasPedemonti"  target="_blank"><img class="icono" src="../assets/icon/github-fill.svg" alt="github"></a> </li>
                     <li><a class="contacto__redes" href="https://www.linkedin.com/" target="_blank"><img class="icono" src="../assets/icon/linkedin-line.svg" alt="linkedin"></a> </li>
                     <li><a class="contacto__redes" href="mailto:lucaspedemonti@gmail.com" target="_blank"><img class="icono" src="../assets/icon/mail-line.svg" alt="email"></a> </li>
                 </ul>  

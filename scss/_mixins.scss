@@ -1,0 +1,16 @@
+@mixin flex-direction-center ($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin title{
+    background-color: rgba(29, 32, 32, 0.144);
+    border-radius:80px 20px;
+    height:50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
