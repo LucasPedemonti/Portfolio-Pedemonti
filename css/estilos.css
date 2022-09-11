@@ -103,7 +103,7 @@ ul {
 .principal {
   grid-area: main;
   display: flex;
-  flex-direction: r;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 4%;
@@ -130,7 +130,7 @@ ul {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  margin-top: 5%; }
+  margin-top: 8%; }
   .secundario .sobremiContenido {
     display: flex;
     flex-direction: row;
@@ -144,15 +144,17 @@ ul {
       align-items: center;
       width: 500px;
       font-family: "Poppins", sans-serif;
-      font-size: 1.2rem;
       margin-right: 10%; }
       .secundario .sobremiContenido .presentacionDos h1 {
         background-color: rgba(29, 32, 32, 0.144);
         border-radius: 80px 20px;
-        height: 50px;
+        font-size: 1.8rem;
+        height: auto;
         padding-left: 50px;
         padding-right: 50px;
         margin-bottom: 10%; }
+      .secundario .sobremiContenido .presentacionDos p {
+        font-size: 1.2rem; }
     .secundario .sobremiContenido .habilidad {
       display: flex;
       flex-direction: column;
@@ -180,22 +182,26 @@ ul {
     .secundario .arquitectura h4 {
       background-color: rgba(29, 32, 32, 0.144);
       border-radius: 80px 20px;
-      height: 50px;
+      font-size: 1.8rem;
+      height: auto;
       padding-left: 50px;
       padding-right: 50px;
       height: max-content;
-      margin-bottom: 5%; }
+      margin-bottom: 3%; }
     .secundario .arquitectura .planos {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      margin-top: 30px; }
+      width: 100%; }
       .secundario .arquitectura .planos .detalle {
         display: flex;
         flex-direction: row;
-        justify-content: space-around; }
+        justify-content: space-around;
+        margin-top: 5%; }
+        .secundario .arquitectura .planos .detalle .velerosm {
+          display: none; }
         .secundario .arquitectura .planos .detalle .velero {
           display: inline-block;
+          box-shadow: 0px 3px 5px #0f0f0f;
           position: relative;
           cursor: pointer;
           overflow: hidden; }
@@ -221,6 +227,7 @@ ul {
         .secundario .arquitectura .planos .detalle .timon {
           display: inline-block;
           position: relative;
+          box-shadow: 0px 3px 5px #0f0f0f;
           cursor: pointer;
           overflow: hidden; }
           .secundario .arquitectura .planos .detalle .timon::before {
@@ -246,10 +253,11 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 30px; }
+        margin-top: 3%; }
         .secundario .arquitectura .planos .refuerzos .quillote {
           display: inline-block;
           position: relative;
+          box-shadow: 0px 3px 5px #0f0f0f;
           cursor: pointer;
           overflow: hidden; }
           .secundario .arquitectura .planos .refuerzos .quillote::before {
@@ -275,6 +283,7 @@ ul {
           display: inline-block;
           position: relative;
           cursor: pointer;
+          box-shadow: 0px 3px 5px #0f0f0f;
           overflow: hidden; }
           .secundario .arquitectura .planos .refuerzos .varengas::before {
             content: "Plano Vargengas";
@@ -316,7 +325,8 @@ ul {
     .experiencia .terciario h1 {
       background-color: rgba(29, 32, 32, 0.144);
       border-radius: 80px 20px;
-      height: 50px;
+      font-size: 1.8rem;
+      height: auto;
       padding-left: 50px;
       padding-right: 50px;
       text-align: center; }
@@ -386,7 +396,8 @@ ul {
   .clientes h1 {
     background-color: rgba(29, 32, 32, 0.144);
     border-radius: 80px 20px;
-    height: 50px;
+    font-size: 1.8rem;
+    height: auto;
     padding-left: 50px;
     padding-right: 50px;
     font-family: "Poppins", sans-serif;
@@ -414,9 +425,12 @@ ul {
   align-items: center;
   margin-top: 5%; }
   .contactame h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
-    margin-bottom: 2%; }
+    background-color: rgba(29, 32, 32, 0.144);
+    border-radius: 80px 20px;
+    font-size: 1.8rem;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px; }
   .contactame div .formulario {
     position: relative;
     height: 100%;
@@ -473,30 +487,53 @@ ul {
     border: 2px solid #b9bff577;
     background-color: rgba(7, 7, 7, 0.199); }
   .contactame section, .contactame .principal section img, .principal section .contactame img {
-    margin-top: 5%;
-    text-align: center; }
+    margin-top: 5%; }
     .contactame section h2, .principal section .contactame img h2 {
-      font-size: 1.4rem; }
+      width: 50%;
+      background-color: rgba(29, 32, 32, 0.144);
+      border-radius: 80px 20px;
+      font-size: 1.4rem;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto; }
     .contactame section .mapa, .principal section .contactame img .mapa {
-      border-radius: 20px;
+      border-radius: 50px;
       margin-top: 20px; }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media only screen and (min-width: 0px) and (max-width: 600px) {
   .encabezado {
     display: flex;
     flex-wrap: wrap; }
   .principal {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 80px; }
     .principal section, .principal section img {
-      width: 90%; }
+      width: 90%;
+      margin-bottom: 20px; }
+  header {
+    background-color: rgba(64, 77, 59, 0.473); }
+    header div img {
+      width: 45px; }
+    header div .navbar-brand {
+      font-size: 110%;
+      margin-right: 20%; }
   .secundario .sobremiContenido {
     flex-direction: column; }
     .secundario .sobremiContenido .presentacionDos {
       width: 80%;
       font-size: 1rem;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-bottom: 50px; }
+      .secundario .sobremiContenido .presentacionDos h1 {
+        padding-top: 2%;
+        font-size: 1.5rem; }
     .secundario .sobremiContenido .habilidad {
       display: flex;
       flex-direction: column;
@@ -526,7 +563,8 @@ ul {
         width: 80%;
         font-size: 1rem; }
     .experiencia .encuesta {
-      width: 50%; }
+      width: 50%;
+      margin-top: 50px; }
       .experiencia .encuesta h2 {
         font-size: 1.2rem; }
       .experiencia .encuesta .trabajos {
@@ -542,16 +580,20 @@ ul {
     align-items: center;
     text-align: center;
     margin-top: 10%;
-    margin-bottom: 37%; }
-    .clientes h1 {
-      font-size: 1.6rem;
-      margin-bottom: 100px; }
+    margin-bottom: 40%; }
+    .clientes div h1 {
+      padding-top: 4%;
+      font-size: 1.5rem;
+      margin-bottom: 150px; }
     .clientes img {
       margin-left: auto;
       margin-right: auto;
       width: 60%; }
+  .contactame h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px; }
   .contactame .formulario {
-    width: 70%; }
+    width: 320px; }
     .contactame .formulario .contact-box {
       padding-left: 10%;
       padding-right: 10%;
@@ -559,38 +601,166 @@ ul {
       align-items: center;
       border-radius: 50px; }
   .contactame .left {
-    display: none; } }
+    display: none; }
+  .arquitectura .planos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px; }
+    .arquitectura .planos .detalle {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%; }
+      .arquitectura .planos .detalle .velero {
+        width: 80%; }
+      .arquitectura .planos .detalle .timon {
+        background-image: url(../images/quillote.png);
+        margin-top: 30px; }
+    .arquitectura .planos .refuerzos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%; }
+      .arquitectura .planos .refuerzos .quillote {
+        background-image: url(../images/quillote.png); }
+      .arquitectura .planos .refuerzos .varengas {
+        background-image: url(../images/quillote.png);
+        margin-top: 30px; } }
 
-.arquitectura .planos {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 30px; }
-  .arquitectura .planos .detalle {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .encabezado {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
+    flex-wrap: wrap; }
+  .principal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px; }
+    .principal section, .principal section img {
+      width: 90%; }
+  header {
+    background-color: rgba(64, 77, 59, 0.473); }
+    header div bar-brand {
+      font-size: 110%;
+      margin-right: 10%; }
+  .secundario .sobremiContenido {
+    flex-direction: column; }
+    .secundario .sobremiContenido .presentacionDos {
+      width: 80%;
+      font-size: 1rem;
+      margin-left: auto;
+      margin-right: auto; }
+      .secundario .sobremiContenido .presentacionDos h1 {
+        font-size: 1.5rem; }
+    .secundario .sobremiContenido .habilidad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px; }
+      .secundario .sobremiContenido .habilidad ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .secundario .sobremiContenido .habilidad ul .progress {
+          width: 100%; }
+        .secundario .sobremiContenido .habilidad ul li {
+          display: flex;
+          margin-top: 30px; }
+          .secundario .sobremiContenido .habilidad ul li img {
+            width: 40px;
+            margin-left: 20px; }
+  .experiencia {
+    flex-direction: column; }
+    .experiencia .terciario {
+      margin-left: auto;
+      margin-right: auto; }
+      .experiencia .terciario h1 {
+        font-size: 1.5rem; }
+      .experiencia .terciario .presentacionTres {
+        width: 80%;
+        font-size: 1rem; }
+    .experiencia .encuesta {
+      margin-top: 80px;
+      width: 50%; }
+      .experiencia .encuesta h2 {
+        font-size: 1.2rem; }
+      .experiencia .encuesta .trabajos {
+        margin-top: 10px; }
+        .experiencia .encuesta .trabajos img {
+          margin-top: 10px;
+          width: 200px; }
+  .clientes {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto; }
-    .arquitectura .planos .detalle .velero {
-      background-image: url(../images/tiendanube.jpg); }
-    .arquitectura .planos .detalle .timon {
-      background-image: url(../images/quillote.png);
-      margin-top: 30px; }
-  .arquitectura .planos .refuerzos {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 12%; }
+    .clientes h1 {
+      font-size: 1.5rem;
+      margin-bottom: 50px; }
+    .clientes img {
+      margin-left: auto;
+      margin-right: auto; }
+  .contactame h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px; }
+  .contactame .formulario {
+    width: 320px; }
+    .contactame .formulario .contact-box {
+      padding-left: 10%;
+      padding-right: 10%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px; }
+  .contactame .left {
+    display: none; }
+  .arquitectura .planos {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto; }
-    .arquitectura .planos .refuerzos .quillote {
-      background-image: url(../images/quillote.png); }
-    .arquitectura .planos .refuerzos .varengas {
-      background-image: url(../images/quillote.png);
-      margin-top: 30px; }
+    width: 100%;
+    margin-top: 30px; }
+    .arquitectura .planos .detalle {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%; }
+      .arquitectura .planos .detalle .velero {
+        background-image: url(../images/tiendanube.jpg); }
+      .arquitectura .planos .detalle .timon {
+        background-image: url(../images/quillote.png);
+        margin-top: 30px; }
+    .arquitectura .planos .refuerzos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%; }
+      .arquitectura .planos .refuerzos .quillote {
+        background-image: url(../images/quillote.png); }
+      .arquitectura .planos .refuerzos .varengas {
+        background-image: url(../images/quillote.png);
+        margin-top: 30px; } }

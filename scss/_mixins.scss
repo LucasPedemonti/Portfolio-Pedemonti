@@ -9,8 +9,9 @@
 @mixin title{
     background-color: rgba(29, 32, 32, 0.144);
     border-radius:80px 20px;
-    height:50px;
-    padding-left:50px;
+    font-size: 1.8rem;
+    height:auto;
+    padding-left:50px;    
     padding-right:50px;
 }
 

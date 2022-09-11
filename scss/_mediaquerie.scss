@@ -1,4 +1,4 @@
-@media only screen and (min-width: 0px) and (max-width: 1024px){
+@media only screen and (min-width: 0px) and (max-width: 600px){
     .encabezado{
         display: flex;
         flex-wrap: wrap;
@@ -6,11 +6,24 @@
     .principal{
         display: flex;
         flex-direction: column;
+        margin-bottom:80px;
         section{
             width: 90%;
-        }
-        
+            margin-bottom: 20px;
+        }        
     }
+    header{
+        background-color:rgba(64, 77, 59, 0.473);
+            div {
+                img{
+                    width: 45px;
+                }
+                .navbar-brand{
+                    font-size: 110%; 
+                    margin-right: 20%;                   
+                }       
+            }
+        }        
     .secundario{
             .sobremiContenido{
                     flex-direction:column;
@@ -19,7 +32,13 @@
                         font-size: 1rem;
                         margin-left: auto;
                         margin-right: auto;
+                        margin-bottom:50px;
+                        h1{
+                        padding-top: 2%;
+                        font-size: 1.5rem;
+                        }
                     }
+                    
                     .habilidad{
                         @include flex-direction-center($column);
                         ul{
@@ -55,6 +74,7 @@
         }
         .encuesta{
             width: 50%;
+            margin-top: 50px;
             h2{
                 font-size: 1.2rem;
             }
@@ -75,10 +95,13 @@
         align-items: center;
         text-align: center;
         margin-top: 10%;
-        margin-bottom: 37%;
-        h1{
-            font-size: 1.6rem;
-            margin-bottom: 100px;
+        margin-bottom: 40%;
+        div{
+            h1{
+                padding-top: 4%;
+                font-size: 1.5rem;
+                margin-bottom: 150px;
+            }
         }
         img{
             margin-left: auto;
@@ -87,8 +110,12 @@
         }
     }
     .contactame{
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: 50px; 
+        }
         .formulario{
-            width: 70%;  
+            width: 320px;  
                   
             .contact-box{
                 padding-left: 10%;
@@ -102,47 +129,221 @@
             display: none;
         }
     }
-}
-
-.arquitectura{
-    .planos{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 30px;
-        .detalle{
+    .arquitectura{
+        .planos{
             display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            width: 90%;
-            justify-content: center;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;            
-            .velero{         
-                background-image: url(../images/tiendanube.jpg);                                     
+            flex-direction: row;
+            width: 100%;
+            margin-top: 30px;
+            .detalle{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto; 
+                margin-top: 5%;           
+                .velero{      
+                    width: 80%;                                   
+                }
+                .timon{    
+                    background-image: url(../images/quillote.png); 
+                    margin-top: 30px;               
+                }
             }
-            .timon{    
-                background-image: url(../images/quillote.png); 
-                margin-top: 30px;               
+            .refuerzos{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto; 
+                margin-top: 5%;   
+                .quillote{
+                    background-image: url(../images/quillote.png);                       
+                }
+                .varengas{
+                    background-image: url(../images/quillote.png);
+                    margin-top: 30px;
+                } 
+            }     
+        }
+    }        
+
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    .encabezado{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:150px;
+        section{
+            width: 90%;
+        }
+        
+    }
+    header{
+        background-color:rgba(64, 77, 59, 0.473);
+            div {
+                bar-brand{
+                    font-size: 110%; 
+                    margin-right: 10%; 
+                }       
+            }
+        }        
+    .secundario{
+            .sobremiContenido{
+                    flex-direction:column;
+                    .presentacionDos {
+                        width:80%;
+                        font-size: 1rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                        h1{
+                            
+                            font-size: 1.5rem;
+                            }
+                    }
+                    .habilidad{
+                        @include flex-direction-center($column);
+                        margin-top: 50px;
+                        ul{
+                                @include flex-direction-center($column);
+                                .progress{
+                                    width: 100%;
+                                }
+                                li{
+                                    display: flex;
+                                    margin-top: 30px;  
+                                        
+                                    img{
+                                        width: 40px;
+                                        margin-left: 20px;
+                                    }
+                                }
+                            }      
+                    } 
+            }
+    }   
+    .experiencia{
+        flex-direction: column;
+        .terciario{
+            margin-left: auto;
+            margin-right:auto ;
+            h1{
+                font-size: 1.5rem;
+            }             
+            .presentacionTres{
+                width:80%;
+                font-size: 1rem;
             }
         }
-        .refuerzos{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            width: 90%;
-            justify-content: center;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;  
-            .quillote{
-                background-image: url(../images/quillote.png);                       
+        .encuesta{
+            margin-top: 80px;
+            width: 50%;
+            h2{
+                font-size: 1.2rem;
             }
-            .varengas{
-                background-image: url(../images/quillote.png);
-                margin-top: 30px;
-            } 
-        }     
+            .trabajos{
+                margin-top: 10px;
+                img{
+                    margin-top: 10px;
+                    width: 200px;
+                }
+            }
+        }    
     }
-}         
+    .clientes {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 12%;
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .contactame{
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: 50px; 
+        }
+        .formulario{
+            width: 320px;  
+
+            .contact-box{
+                padding-left: 10%;
+                padding-right: 10%; 
+                justify-content: center;
+                align-items: center;
+                border-radius:50px;  
+            }
+        }
+        .left{
+            display: none;
+        }
+    }
+
+
+    .arquitectura{
+        .planos{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 30px;
+            .detalle{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto; 
+                margin-top: 5%;           
+                .velero{      
+                    background-image: url(../images/tiendanube.jpg);                                     
+                }
+                .timon{    
+                    background-image: url(../images/quillote.png); 
+                    margin-top: 30px;               
+                }
+            }
+            .refuerzos{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto; 
+                margin-top: 5%;   
+                .quillote{
+
+                    background-image: url(../images/quillote.png);                       
+                }
+                .varengas{
+                    background-image: url(../images/quillote.png);
+                    margin-top: 30px;
+                } 
+            }     
+        }
+    }        
+
+}
