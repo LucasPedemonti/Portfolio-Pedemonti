@@ -605,7 +605,6 @@ ul {
   .arquitectura .planos {
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: 30px; }
     .arquitectura .planos .detalle {
       display: flex;
@@ -617,10 +616,7 @@ ul {
       margin-left: auto;
       margin-right: auto;
       margin-top: 5%; }
-      .arquitectura .planos .detalle .velero {
-        width: 80%; }
       .arquitectura .planos .detalle .timon {
-        background-image: url(../images/quillote.png);
         margin-top: 30px; }
     .arquitectura .planos .refuerzos {
       display: flex;
