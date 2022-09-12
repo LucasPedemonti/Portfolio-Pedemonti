@@ -253,7 +253,7 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 3%; }
+        margin-top: 5%; }
         .secundario .arquitectura .planos .refuerzos .quillote {
           display: inline-block;
           position: relative;
